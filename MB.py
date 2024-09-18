@@ -8,8 +8,8 @@ import os
 
 mod_list = {"username": user_id}
 OWNER_ID = "add your own user id here as an integer value"
-insults = ["Add your custom insults here, like this", "You're so fat!"]
-banned = ["Add your list of blocked words here, like this", "BlockedWord1"]
+insults = ["Add your custom insults here like this", "You're so fat!"]
+banned = ["Add your list of blocked words here like this", "Blocked Word1"]
 
 load_dotenv()
 BOT_TOKEN = os.getenv('TOKEN')
@@ -44,7 +44,7 @@ async def modlist_slash(interactions):
 
 #Shutdown MB
 @bot.tree.command(name="shutdown", description="Bot shuts down"
-                                               "(authorised to Poseidon only)")
+                                               "(authorised to the bot's owner only)")
 async def shutdown_slash(interactions):
     author_id = interactions.user.id
     if author_id == OWNER_ID:
