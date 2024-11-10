@@ -1,5 +1,5 @@
 # Discord-Bot
-#### Read the license first. ####
+### Read the license first. ###
 How to make a discord bot?
 A simple auto-moderation bot made in python.
 
